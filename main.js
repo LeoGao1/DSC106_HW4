@@ -421,13 +421,14 @@ for (var i in processed) {
   var m = {};
   if(i<1997){
     console.log(i);
-    m = {url:'https://raw.githubusercontent.com/LeoGao1/DSC106_HW4_Data/master/maxresdefault.jpg'};
+    m = {url:'https://raw.githubusercontent.com/LeoGao1/DSC106_HW4_Data/master/maxresdefault.jpg',title:'',alt:''};
   }else{
-    m = {url:'https://raw.githubusercontent.com/LeoGao1/DSC106_HW4_Data/master/leonardo-770x433.webp'};
+    m = {url:'https://raw.githubusercontent.com/LeoGao1/DSC106_HW4_Data/master/leonardo-770x433.webp',title:'',alt:''};
   }
   events_data.push({start_date:rdate,
                     text:{headline:hd,text:txt},
-                    media:m
+                    media:m,
+                    background:{color:'#b8860b'}
                   });
 }
 
@@ -496,7 +497,9 @@ Highcharts.chart('c2', {
 var additionalOptions = {
               start_at_end: true,
               default_bg_color: {r:0, g:0, b:0},
-              timenav_height: 250
+              timenav_height: 250,
+              scale_factor: 5,
+              timenav_height:20
             };
 window.timeline = new TL.Timeline('timeline-embed', timeline_json,
                                 additionalOptions);
