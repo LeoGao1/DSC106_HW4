@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Internal stylesheet import -->
+    <link rel="stylesheet" href="main.css">
+    <link title="timeline-styles" rel="stylesheet"
+     href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <!-- External Script -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/modules/funnel.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+
+  </head>
+
+  <body>
+    <h1 class="center"> Analysis of Leonardo DiCaprio's Movies</h1>
+    <div id="container">
+      <p class="center"> This website is an Analysis of Leonardo DiCaprio's Movies </p>
+      <p class="center"> Let's first figure out the directors who have cooperated with Leonardo </p>
+      <p class="center"> (The directors who have few cooperative times with Leonardo are ignored)</p>
+      <div class="chart1" id="c1"></div>
+      <p class="center"> Then which kind of movies that leonardo has starred in? </p>
+      <div class="chart2" id="c2"></div>
+      <p> Finally, let's review the timeline of Leonardo </p>
+      <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+    </div>
+
+
+
+    <!-- Internal JS Import -->
+    <script src="main.js"></script>
+  </body>
+</html>
